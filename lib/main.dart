@@ -10,6 +10,11 @@ void main() => runApp(MaterialApp(
 class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Timer(
+      Duration(seconds: 5),
+      () => Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => DashboardScreen())),
+    );
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -48,7 +53,8 @@ class LoginScreen extends StatelessWidget {
               heroTag: null,
               label: Text('If login succeeds'),
               backgroundColor: Colors.green,
-              onPressed: null,
+              onPressed: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SplashScreen())),
             ),
           ],
         ),
