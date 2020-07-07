@@ -1,9 +1,10 @@
 Question (a):
 Flutter use Navigator widget which contain several methods that will handled screen changes differently.
-In addition the Navigation in Flutter implements Stacks to manage the screen. This concept use First-In-Last-Out
+In addition the Navigation in Flutter implements Stacks to manage the screen. This concept use First-In-Last-Out.
 
 
 Question (b):
-
+push - to push new screen without losing the previous screen (by adding new screen into stack)
+       so that the dashboard screen can return to the Login screen
 
 
